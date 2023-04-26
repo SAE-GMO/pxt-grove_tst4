@@ -1,6 +1,6 @@
 # Grove
 
-A Microsoft MakeCode package for for Seeed Studio Grove module.
+A Microsoft MakeCode package for for Seeed Studio Grove module. xxxx
 
 ## Basic usage
 
