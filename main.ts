@@ -89,7 +89,7 @@ enum GroveJoystickKey {
  */
 //% weight=10 color=#9F79EE icon="\uf1b3" block="Grove"
 //% groups='["4-Digit","Ultrasonic","Gesture","Thumbjoystick","UartWiFi"]'
-namespace grove {
+namespace grove2 {
     /**
      * 
      */
@@ -759,7 +759,9 @@ namespace grove {
         while (isWifiConnected && retry > 0) {
             retry = retry - 1;
             // establish TCP connection
-            sendAtCmd("AT+CIPSTART=\"TCP\",\"api.thingspeak.com\",80")
+            //sendAtCmd("AT+CIPSTART=\"TCP\",\"api.thingspeak.com\",80")
+            sendAtCmd("AT+CIPSTART=\"TCP\",\"thingspeak.umwelt-campus.de\",80")
+
             result = waitAtResponse("OK", "ALREADY CONNECTED", "ERROR", 2000)
             if (result == 3) continue
 
