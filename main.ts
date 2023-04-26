@@ -89,7 +89,7 @@ enum GroveJoystickKey {
  */
 //% weight=10 color=#9F79EE icon="\uf1b3" block="Grove"
 //% groups='["4-Digit","Ultrasonic","Gesture","Thumbjoystick","UartWiFi"]'
-namespace grove2 {
+namespace grove {
     /**
      * 
      */
@@ -737,6 +737,15 @@ namespace grove2 {
     //% block="Wifi OK?"
     //% group="UartWiFi"
     export function wifiOK() {
+        return isWifiConnected
+    }
+
+    /**
+     * Check if Grove - Uart WiFi V2 is connected to Wifi
+     */
+    //% block="Wifi2 OK?"
+    //% group="UartWiFi"
+    export function wifiOK2() {
         return isWifiConnected
     }
 
