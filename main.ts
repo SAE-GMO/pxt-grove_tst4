@@ -743,7 +743,7 @@ namespace grove {
     /**
      * Send data to ThinkSpeak
      */
-    //% block="Send Data to your ThinkSpeak Channel|Write API Key %apiKey|Field1 %field1|Field2 %field2|Field3 %field3|Field4 %field4|Field5 %field5|Field6 %field6|Field7 %field7|Field8 %field8"
+    //% block="Send Data to your ThinkSpeak Channel|URL %url|Write API Key %apiKey|Field1 %field1|Field2 %field2|Field3 %field3|Field4 %field4|Field5 %field5|Field6 %field6|Field7 %field7|Field8 %field8"
     //% group="UartWiFi"
     //% apiKey.defl="your Write API Key"
     export function sendToThinkSpeak(url: string = "thingspeak.com", apiKey: string, field1: number, field2: number, field3: number, field4: number, field5: number, field6: number, field7: number, field8: number) {
