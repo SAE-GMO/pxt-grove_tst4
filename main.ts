@@ -734,7 +734,7 @@ namespace grove {
     /**
      * Check if Grove - Uart WiFi V2 is connected to Wifi
      */
-    //% block="Wifi OK?!?!?!"
+    //% block="Wifi OK?"
     //% group="UartWiFi"
     export function wifiOK() {
         return isWifiConnected
@@ -759,7 +759,7 @@ namespace grove {
         while (isWifiConnected && retry > 0) {
             retry = retry - 1;
             // establish TCP connection
-            sendAtCmd("AT+CIPSTART=\"TCP\",\"thingspeak.umwelt-campus.de\",80")
+            sendAtCmd("AT+CIPSTART=\"HTTP\",\"thingspeak.umwelt-campus.de\",80")
             result = waitAtResponse("OK", "ALREADY CONNECTED", "ERROR", 2000)
             if (result == 3) continue
 
