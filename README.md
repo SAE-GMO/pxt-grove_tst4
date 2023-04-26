@@ -1,6 +1,6 @@
-# Grove
+# Grove TST
 
-A Microsoft MakeCode package for for Seeed Studio Grove module. xxxx
+Based on https://github.com/ud-edu/pxt-grove
 
 ## Basic usage
 
