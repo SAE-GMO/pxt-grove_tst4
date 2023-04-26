@@ -1,7 +1,7 @@
 {
-    "name": "Grove tsti2",
-    "version": "0.6.1",
-    "description": "A Microsoft MakeCode package for Seeed Studio Grove module. xyz",
+    "name": "Grove tsti6.2.",
+    "version": "0.6.2",
+    "description": "A Microsoft MakeCode package for Seeed Studio Grove module. xyzz",
     "license": "MIT",
     "dependencies": {
         "core": "*"
